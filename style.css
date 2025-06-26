@@ -1,106 +1,201 @@
-body{
+body {
     background-color: #56a0b4;
-}
-.ultimate{
-    background-color: black;
-}
-#profile-pic{
-    border-radius: 50%;
-}
-#black{
-    margin: 80px;
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#two{
-    margin: auto;
-    width: 40%;
-    text-align: center;
-    color: #101413;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.ultimate {
+    background-color: black;
 }
-span{
-    color:#66bfbf ;
-    font-size: 3rem;
+
+#profile-pic {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
-.skills{
-    margin: 100px;
-    text-align: center;
-    font-size: 2rem;
-    color:#66bfbf ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.container{
-    margin: 10px;
+
+#black {
+    margin: 80px auto 0 auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.container>p{
-    width: 30%;
+
+#two {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    color: #101413;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span {
+    color: #66bfbf;
+    font-size: 3rem;
+}
+
+.skills {
+    margin: 100px auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #66bfbf;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    padding: 0 10px;
+}
+
+.container > p {
+    flex: 1 1 300px;
     padding-left: 20px;
     font-size: 1.5rem;
     color: #101413;
 }
-.contact{
+
+.contact {
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    padding: 0px;
+    flex-wrap: wrap;
+    padding: 0;
 }
-h1{
+
+h1 {
     font-size: 2.5rem;
-    color:#66bfbf;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #66bfbf;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 10px;
-    padding: 0px;
+    padding: 0;
 }
-p{
+
+p {
     text-align: center;
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
-    width: 30%;
+    width: 90%;
+    max-width: 600px;
     color: #101413;
-    width: 30%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0 auto;
+    padding: 0;
 }
-.con{
+
+.con {
     margin: 10px;
 }
-#end{
-    
+
+#end {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    padding: 0px;
+    padding: 0;
+    flex-wrap: wrap;
 }
-#end>p{
+
+#end > p {
     font-size: 1.2rem;
 }
-.container2{
+
+.container2 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
     background-color: #66bfbf;
     margin-top: 100px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: x-large;
     text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    flex-wrap: wrap;
 }
-.text-center{
+
+.text-center {
     text-align: center;
     width: 100%;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     margin: 10px;
+    font-size: 1.1rem;
 }
-h2{
+
+h2 {
     margin: auto;
     margin-right: 2px;
     margin-left: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    span {
+        font-size: 2.2rem;
+    }
+
+    .skills {
+        font-size: 1.5rem;
+    }
+
+    .container > p,
+    p {
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container2 {
+        font-size: 1.1rem;
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    #profile-pic {
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    span {
+        font-size: 1.8rem;
+    }
+
+    .skills {
+        font-size: 1.2rem;
+    }
+
+    .container > p,
+    p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        margin: 5px;
+    }
+
+    .container2 {
+        font-size: 1rem;
+    }
 }
